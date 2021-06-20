@@ -1,0 +1,314 @@
+main{
+    color: black;
+    margin: 0 auto;
+    max-width: 1920px;
+    border: solid 5px black ;
+    background-color: #F8F8F8;
+}
+
+section{
+    margin: 5% 0 10% 0;
+}
+h1{
+
+    font-family: "h1";
+    margin: 5% 0 5% 2%;
+    font-size: 250%;
+    }
+h2{
+    font-family: "h";
+    margin-bottom: 0;
+    font-size: 170%;
+}
+h3{
+    font-family: "h";
+    margin-top: 0;
+    font-size: 110%;
+    color: gray;
+}
+
+h4{
+    font-family: "h";
+    display: flex;
+    justify-content: center;
+    font-size: 160%;
+}
+h5{
+    font-family: "h";
+    display: flex;
+    justify-content: center;
+    font-size: 120%;
+}
+h6{
+    font-family: "h";
+    display: flex;
+    justify-content: center;
+    font-size: 120%;
+    color: white;
+}
+a{
+    color: black;
+}
+
+nav{
+    display: flex;
+    background-color: black;
+align-items: center;
+
+}
+.logo{
+    margin: 1%;
+}
+.imageslogan{
+    margin-left: 125%;
+}
+.nav_menu{
+    display: flex;
+    justify-content: end; 
+    margin-left: 30%;
+justify-content: space-around;
+}
+.navtxt{
+margin: 40px;
+ }
+
+header{
+height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+
+.cars{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.car{
+
+margin: 0 3% 0 3%;
+}
+.carsfoot{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.carfoot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 3% 0 3%;
+
+    }
+
+    .copyright{
+        display: flex;
+        justify-content: center;
+        align-items: center;       
+        margin-top: 25px;
+        justify-content: space-between;
+        background-color: black;
+   
+    }
+
+/* СЛАЙДЕРЫ */
+
+/* стили для корневого элемента слайдера */
+.slider {
+    position: relative;
+    overflow: hidden;
+    max-width: 19200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* стили для wrapper */
+  .slider__wrapper {
+    position: relative;
+    overflow: hidden;
+    background-color: #F8F8F8;
+  }
+  
+  /* стили для элемента, в котором непосредственно расположены элементы (слайды) */
+  .slider__items {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  /* класс для отключения transition */
+  .transition-none {
+    transition: none;
+  }
+  
+  /* стили для элементов */
+  .slider__item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: relative;
+  }
+  
+  /* кнопки Prev и Next */
+  .slider__control {
+    position: absolute;
+    top: 50%;
+    width: 5%;
+    height: 15%;
+    transform: translateY(-50%);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0.5;
+    user-select: none;
+  }
+  
+  .slider__control_show {
+    display: flex;
+  }
+  
+  .slider__control:hover,
+  .slider__control:focus {
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.7;
+  }
+  
+  .slider__control_prev {
+    left: 0;
+  }
+  
+  .slider__control_next {
+    right: 0;
+  }
+  
+  .slider__control::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+  }
+  
+  .slider__control_prev::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+  }
+  
+  .slider__control_next::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+  }
+  
+  /* Индикаторы */
+  .slider__indicators {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin: 0 15%;
+    list-style: none;
+    user-select: none;
+  }
+  
+  .slider__indicator {
+    flex: 0 1 auto;
+    width: 30px;
+    height: 4px;
+    margin-right: 3px;
+    margin-left: 3px;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    cursor: pointer;
+  }
+  
+  .slider__indicator_active {
+    background-color: #fff;
+  }
+
+
+
+  @media screen and (max-width: 1375px) {
+
+    .nav_menu{
+  margin: 0;
+    }
+    .slogan{
+        display: none;
+    }
+} 
+
+@media screen and (max-width: 1150px) {
+
+    .nav_menu{
+  margin: 0;
+    }
+    .slogan{
+        display: none;
+    }
+    .carsfoot{
+        flex-direction: column;
+align-items: center;
+    }
+    .copyright{
+    flex-direction: column;
+    align-items: center;
+    }
+} 
+@media screen and (max-width: 804px) {
+
+    .nav_menu{
+        flex-direction: column;
+        align-items: center;
+    }
+.logo{
+    margin-left: 20%;
+}
+   .cars{
+    flex-direction: column;
+    align-items: center;
+   }
+} 
+
+@media screen and (max-width: 804px){
+.imagelogo{
+    width: 90px;
+}
+.logo{
+    margin-left: 10%;
+}
+h1{ font-size: 150%;}
+h2{ font-size: 90%;}
+h3{ font-size: 70%;}
+h4{ font-size: 100%;}
+h5{ font-size: 90%;}
+}
+
+
+
+
+
+
+
+  /*Шрифты*/
+  @font-face {
+
+    font-family: "h1"; 
+    src: url("../fonts/14155.otf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+  }
+  @font-face {
+    font-family: "h"; 
+    src: url("../fonts/h.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    } 
